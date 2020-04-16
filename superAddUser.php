@@ -4,11 +4,11 @@ include_once("lib/header.php");
 ?>
 <header>
     <h1>Corona International Schools</h1>
-    <h3>Registration Page</h3>
+    <h3>Add new user</h3>
 </header>
 
 <main>
-    <p>We offer the best education for today's kids</p>
+
     <p><?php
         if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
             echo "<span style='color:red'>" . $_SESSION['error'] . "</span>";
@@ -17,7 +17,7 @@ include_once("lib/header.php");
 
         ?></p>
 
-    <form action="processRegister.php" method="POST">
+    <form action="processSuperAddUser.php" method="POST">
 
         <p>
             <label for="fullName">Full Name: </label><br>
@@ -96,7 +96,7 @@ include_once("lib/header.php");
         </p>
 
         <p>
-            <button type="submit">Submit</button>
+            <button type="submit">Add User</button>
         </p>
 
     </form>

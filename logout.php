@@ -1,8 +1,9 @@
 <?php
 include_once("lib/header.php");
 ?>
-
-<h3>Good Bye</h3>
+<header>
+    <h1>Corona International Schools</h1>
+    <h3>Good Bye</h3>
 </header>
 
 <main>

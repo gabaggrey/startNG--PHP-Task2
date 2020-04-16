@@ -3,11 +3,11 @@ include_once("lib/header.php");
 ?>
 <header>
     <h1>Corona International Schools</h1>
-    <h3>Home Page</h3>
+    <h3>Forgot Password</h3>
 </header>
 
 <main>
-    <p>We offer the best education for today's kids</p>
+    <p>Coming soon......!</p>
 </main>
 
 </body>

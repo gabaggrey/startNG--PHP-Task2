@@ -18,6 +18,7 @@
         $fullName = $_POST['fullName'];
     }
 
+
     if ($_POST['email'] == "") 
     {
         $errorCount++;
@@ -40,6 +41,7 @@
 
     //registration time
     $reg_time = date("Y-m-d");
+
 
     $_SESSION['fullName'] = $fullName;
     $_SESSION['email'] = $email;
@@ -91,8 +93,6 @@
 
         file_put_contents("db/users/" . $email . ".json", json_encode($userObject));
         $_SESSION["message"] = "Registration Successful";
-        header("Location: login.php");
+        header("Location: superuser.php");
         
     }
-
-?>

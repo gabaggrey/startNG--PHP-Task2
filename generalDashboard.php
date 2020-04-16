@@ -1,8 +1,9 @@
 <?php
 include_once("lib/header.php");
 ?>
-<h2>General DashBoard </h2>
-<h3>This Dashboard is meant for Management and Teaching staffs</h3>
+<header>
+    <h1>Corona International Schools</h1>
+    <h3>This Dashboard is meant for Management and Teaching staffs</h3>
 
 </header>
 <hr>
@@ -10,12 +11,14 @@ include_once("lib/header.php");
 <main>
     <p>We offer the best education for today's kids</p>
 
-    Logged User ID : <?php $_SESSION['loggedIn']; ?><br>
-    Designation: <?php $_SESSION['designation']; ?><br>
-    Department : <?php $_SESSION['department']; ?><br>
-    Date of Registration : <?php $_SESSION['reg_time']; ?><br>
-    Date of Last Login : <?php $_SESSION['userLoginDate']; ?><br>
+    Logged User ID : <?php print_r($_SESSION['loggedIn']); ?><br>
+    Designation: <?php print_r($_SESSION['designation']); ?><br>
+    Date of Registration : <?php print_r($_SESSION['reg_time']); ?><br>
+    Last Login Date : <?php print_r($_SESSION['userLoginDate']); ?><br>
+    Last Login Time: <?php print_r($_SESSION['userLoginTime']); ?><br>
+
 </main>
+
 
 </body>
 

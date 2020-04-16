@@ -1,9 +1,10 @@
 <?php
-    include_once("lib/header.php");
+include_once("lib/header.php");
 
 ?>
-<h2>Management DashBoard </h2>
-<h3>This Dashboard is meant for Management and Teaching staffs</h3>
+<header>
+    <h1>Corona International Schools</h1>
+    <h3>This Dashboard is meant for Management and Teaching staffs</h3>
 
 </header>
 <hr>
